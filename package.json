@@ -1,0 +1,27 @@
+{
+  "name": "automacao-web-amazon",
+  "version": "1.0.0",
+  "description": "Automacao validacao de produtos da amazon",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolasokumabe/automacao-amazon-web.git"
+  },
+  "keywords": [
+    "cypress",
+    "web",
+    "amazon"
+  ],
+  "author": "Nicolas Kumabe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nicolasokumabe/automacao-amazon-web/issues"
+  },
+  "homepage": "https://github.com/nicolasokumabe/automacao-amazon-web#readme",
+  "devDependencies": {
+    "cypress": "^13.6.2"
+  }
+}
