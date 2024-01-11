@@ -67,5 +67,66 @@ describe('home page', () => {
         cy.get('[data-testid="carousel-deals-collection-kitchen"] > .GridPresets-module__gridPresetsLargeItem_2xPgV2VoJCncjGPj18in1h')
             .scrollIntoView().should('have.text', 'Cozinha')
 
+        cy.contains('Cuidados Pessoais e Limpeza')
+        cy.get('[data-testid="carousel-deals-collection-health-and-personal-care"] > .GridPresets-module__gridPresetsLargeItem_2xPgV2VoJCncjGPj18in1h')
+            .scrollIntoView().should('have.text', 'Cuidados Pessoais e Limpeza')
+
+        cy.contains('CD e Vinil')
+        cy.get('[data-testid="carousel-deals-collection-dvd"] > .GridPresets-module__gridPresetsLargeItem_2xPgV2VoJCncjGPj18in1h')
+            .scrollIntoView().should('have.text', 'CD e Vinil')
+
+        // clica no botao para mostrar mais opcoes
+        cy.get('.a-section > .a-begin > .a-row > .a-carousel-row-inner > .a-carousel-right > .a-button > .a-button-inner')
+            .click()
+
+        // valida novas subopcoes de atalho de pesquisa
+        cy.contains('DVD e Blu-ray')
+        cy.get('[data-testid="carousel-deals-collection-dvd-and-blu-ray"] > .GridPresets-module__gridPresetsLargeItem_2xPgV2VoJCncjGPj18in1h')
+            .scrollIntoView().should('have.text', 'DVD e Blu-ray')
+
+        cy.contains('Eletrônicos e Celulares')
+        cy.get('[data-testid="carousel-deals-collection-electronics"] > .GridPresets-module__gridPresetsLargeItem_2xPgV2VoJCncjGPj18in1h')
+            .scrollIntoView().should('have.text', 'Eletrônicos e Celulares')
+
+        cy.contains('Esportes e Aventura')
+        cy.get('[data-testid="carousel-deals-collection-sports"] > .GridPresets-module__gridPresetsLargeItem_2xPgV2VoJCncjGPj18in1h')
+            .scrollIntoView().should('have.text', 'Esportes e Aventura')
+
+        cy.contains('Ferramentas e Construção')
+        cy.get('[data-testid="carousel-deals-collection-tools"] > .GridPresets-module__gridPresetsLargeItem_2xPgV2VoJCncjGPj18in1h')
+            .scrollIntoView().should('have.text', 'Ferramentas e Construção')
+
+        cy.contains('Informática')
+        cy.get('[data-testid="carousel-deals-collection-computers"] > .GridPresets-module__gridPresetsLargeItem_2xPgV2VoJCncjGPj18in1h')
+            .scrollIntoView().should('have.text', 'Informática')
+
+        cy.contains('Jardim e Piscina')
+        cy.get('[data-testid="carousel-deals-collection-lawn-and-garden"] > .GridPresets-module__gridPresetsLargeItem_2xPgV2VoJCncjGPj18in1h')
+            .scrollIntoView().should('have.text', 'Jardim e Piscina')
+
+        cy.contains('Livros e eBooks')
+        cy.get('[data-testid="carousel-deals-collection-books"] > .GridPresets-module__gridPresetsLargeItem_2xPgV2VoJCncjGPj18in1h')
+            .scrollIntoView().should('have.text', 'Livros e eBooks')
+
+        cy.contains('Moda')
+        cy.get('[data-testid="carousel-deals-collection-fashion"] > .GridPresets-module__gridPresetsLargeItem_2xPgV2VoJCncjGPj18in1h')
+            .scrollIntoView().should('have.text', 'Moda')
+
+        cy.contains('Papelaria e Escritório')
+        cy.get('[data-testid="carousel-deals-collection-office-products"] > .GridPresets-module__gridPresetsLargeItem_2xPgV2VoJCncjGPj18in1h')
+            .scrollIntoView().should('have.text', 'Papelaria e Escritório')
+
+        cy.contains('Pet Shop')
+        cy.get('[data-testid="carousel-deals-collection-pet-products"] > .GridPresets-module__gridPresetsLargeItem_2xPgV2VoJCncjGPj18in1h')
+            .scrollIntoView().should('have.text', 'Pet Shop')
+
+        cy.contains('Video Games')
+        cy.get('[data-testid="carousel-deals-collection-video-games"] > .GridPresets-module__gridPresetsLargeItem_2xPgV2VoJCncjGPj18in1h')
+            .scrollIntoView().should('have.text', 'Video Games')
+
+        cy.contains('Outlet')
+        cy.get('[data-testid="carousel-Outlet"] > .GridPresets-module__gridPresetsLargeItem_2xPgV2VoJCncjGPj18in1h')
+            .scrollIntoView().should('have.text', 'Outlet')
+
     })
 })
